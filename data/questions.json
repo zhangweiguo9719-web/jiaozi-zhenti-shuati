@@ -1,0 +1,82 @@
+[
+  {
+    "id": "q001",
+    "year": 2022,
+    "subject": "计算机基础",
+    "type": "single",
+    "stem": "在 HTML 中，用于插入超链接的标签是哪个？",
+    "options": {
+      "A": "<link>",
+      "B": "<a>",
+      "C": "<href>",
+      "D": "<url>"
+    },
+    "answer": "B",
+    "analysis": "超链接使用 a 标签，href 属性用于指定目标地址。",
+    "score": 2
+  },
+  {
+    "id": "q002",
+    "year": 2023,
+    "subject": "JavaScript",
+    "type": "single",
+    "stem": "以下哪个方法可以把 JSON 字符串转换为 JavaScript 对象？",
+    "options": {
+      "A": "JSON.toObject()",
+      "B": "JSON.decode()",
+      "C": "JSON.parse()",
+      "D": "JSON.stringify()"
+    },
+    "answer": "C",
+    "analysis": "JSON.parse() 用于解析 JSON 字符串；JSON.stringify() 用于序列化对象。",
+    "score": 2
+  },
+  {
+    "id": "q003",
+    "year": 2021,
+    "subject": "网络基础",
+    "type": "single",
+    "stem": "HTTP 状态码 404 表示什么？",
+    "options": {
+      "A": "服务器内部错误",
+      "B": "请求成功",
+      "C": "资源未找到",
+      "D": "权限不足"
+    },
+    "answer": "C",
+    "analysis": "404 Not Found 表示请求资源不存在或无法找到。",
+    "score": 2
+  },
+  {
+    "id": "q004",
+    "year": 2024,
+    "subject": "CSS",
+    "type": "single",
+    "stem": "在 CSS 中，哪个属性用于设置元素内部内容与边框之间的距离？",
+    "options": {
+      "A": "margin",
+      "B": "padding",
+      "C": "border-spacing",
+      "D": "gap"
+    },
+    "answer": "B",
+    "analysis": "padding 控制内容与边框之间的内边距；margin 控制元素外边距。",
+    "score": 2
+  },
+  {
+    "id": "q005",
+    "year": 2020,
+    "subject": "操作系统",
+    "type": "single",
+    "stem": "以下哪一项通常不是操作系统的核心功能？",
+    "options": {
+      "A": "进程管理",
+      "B": "内存管理",
+      "C": "设备管理",
+      "D": "网页前端渲染"
+    },
+    "answer": "D",
+    "analysis": "网页前端渲染主要由浏览器完成，不属于操作系统核心功能。",
+    "score": 2
+  }
+]

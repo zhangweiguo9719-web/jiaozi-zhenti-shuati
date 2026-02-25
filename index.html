@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>静态刷题应用</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>静态刷题应用</h1>
+      <p>支持套卷模式与专项练习（纯前端，无需后端）</p>
+    </header>
+
+    <main class="container">
+      <section id="home-view" class="view active">
+        <h2>选择练习模式</h2>
+        <div class="entry-grid">
+          <button id="start-paper-btn" class="primary">进入套卷模式</button>
+          <button id="start-practice-btn" class="secondary">进入专项练习</button>
+        </div>
+      </section>
+
+      <section id="paper-view" class="view">
+        <div class="toolbar">
+          <button data-back-home>返回首页</button>
+          <label class="switch-wrap">
+            <input type="checkbox" id="realtime-toggle" checked />
+            实时判题
+          </label>
+        </div>
+        <div id="paper-meta" class="meta"></div>
+        <div id="paper-question" class="card"></div>
+        <div class="nav-row">
+          <button id="paper-prev-btn">上一题</button>
+          <button id="paper-next-btn">下一题</button>
+          <button id="paper-submit-btn" class="danger">交卷</button>
+        </div>
+        <div id="paper-result" class="result-box"></div>
+      </section>
+
+      <section id="practice-view" class="view">
+        <div class="toolbar">
+          <button data-back-home>返回首页</button>
+        </div>
+        <h2>专项练习筛选</h2>
+        <form id="practice-filter-form" class="filter-grid">
+          <label>
+            年份
+            <select id="year-filter">
+              <option value="">全部</option>
+            </select>
+          </label>
+          <label>
+            题型
+            <select id="type-filter">
+              <option value="single">single（单选）</option>
+            </select>
+          </label>
+          <label>
+            关键字
+            <input id="keyword-filter" type="text" placeholder="题干关键字" />
+          </label>
+          <label>
+            随机抽题数
+            <input id="count-filter" type="number" min="1" value="20" />
+          </label>
+          <button class="primary" type="submit">开始练习</button>
+        </form>
+        <p id="practice-source-info" class="meta"></p>
+
+        <div id="practice-question" class="card"></div>
+        <div class="nav-row">
+          <button id="practice-prev-btn">上一题</button>
+          <button id="practice-next-btn">下一题</button>
+        </div>
+      </section>
+    </main>
+
+    <template id="question-template">
+      <article>
+        <h3 class="question-title"></h3>
+        <p class="question-stem"></p>
+        <div class="options"></div>
+        <div class="question-actions">
+          <button class="favorite-btn" type="button">收藏 / 取消收藏</button>
+        </div>
+        <div class="feedback"></div>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
