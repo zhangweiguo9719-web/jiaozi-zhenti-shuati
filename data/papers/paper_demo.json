@@ -1,0 +1,6 @@
+{
+  "id": "paper_demo",
+  "title": "示例套卷（单选）",
+  "description": "演示用套卷，题目来自 questions.json",
+  "questionIds": ["q001", "q002", "q003", "q004", "q005"]
+}
